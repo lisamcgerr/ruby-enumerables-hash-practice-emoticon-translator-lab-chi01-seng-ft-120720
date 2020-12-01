@@ -29,4 +29,5 @@ def get_japanese_emoticon(file, emoticon)
   emoticon_hash.each do |emotion, emotion_value|
     if emotion_value[:english] == emoticon
         return emotion_value[:japanese]
-    else   
+    else 
+      
