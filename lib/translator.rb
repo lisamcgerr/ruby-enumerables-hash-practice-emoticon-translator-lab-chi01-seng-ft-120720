@@ -27,9 +27,8 @@ def get_japanese_emoticon(file, emoticon)
  emoticon_hash = load_library(file)
   emoticon_hash.each do |emotion, emotion_value|
     if emotion_value[:english] == emoticon
-        return emotion_value[:japanese]
-    else emotion_value[:english] == nil
-      return "Sorry, that emoticon was not found"
+      return emotion_value[:japanese]
+      end
     end
-  end
+  return "Sorry, that emoticon was not found"
 end
